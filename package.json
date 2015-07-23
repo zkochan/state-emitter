@@ -1,0 +1,27 @@
+{
+  "name": "state-emitter",
+  "version": "0.1.0",
+  "description": "An emitter that auto-triggers new handlers once a state was switched on.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node fosofile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkochan/state-emitter.git"
+  },
+  "keywords": [
+    "state",
+    "emitter"
+  ],
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/state-emitter/issues"
+  },
+  "homepage": "https://github.com/zkochan/state-emitter#readme",
+  "devDependencies": {
+    "fosify-test": "^0.1.5",
+    "foso": "^0.9.6"
+  }
+}
