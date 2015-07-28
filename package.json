@@ -1,6 +1,6 @@
 {
   "name": "state-emitter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An emitter that auto-triggers new handlers once a state was switched on.",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,19 @@
     "state",
     "emitter"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltan.kochan@gmail.com",
+    "url": "http://kochan.io"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zkochan/state-emitter/issues"
   },
   "homepage": "https://github.com/zkochan/state-emitter#readme",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "devDependencies": {
     "fosify-test": "^0.1.5",
     "foso": "^0.9.6"

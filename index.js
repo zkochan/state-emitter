@@ -30,7 +30,7 @@ StateEmitter.prototype.emit = function(state) {
     throw new Error('state is required and has to be a string');
   }
 
-  this._stateArguments[state] = Array.prototype.splice.call(arguments, 1);
+  this._stateArguments[state] = Array.prototype.slice.call(arguments, 1);
 
   while(this._stateCallbacks[state] && this._stateCallbacks[state].length) {
     var cb = this._stateCallbacks[state].shift();
