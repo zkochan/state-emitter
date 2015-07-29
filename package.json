@@ -1,6 +1,6 @@
 {
   "name": "state-emitter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "An emitter that auto-triggers new handlers once a state was switched on.",
   "main": "index.js",
   "scripts": {

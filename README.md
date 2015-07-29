@@ -24,7 +24,7 @@ stateEmitter.once('ready', function(msg) {
   /* some code on ready */
 });
 
-stateEmitter.emit('ready', 'Hello world');
+stateEmitter.state('ready', 'Hello world');
 
 /* this one will be executed immediately because already ready */
 stateEmitter.once('ready', function(msg) {

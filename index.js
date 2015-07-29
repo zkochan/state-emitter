@@ -5,6 +5,12 @@ function StateEmitter() {
   this._stateArguments = {};
 }
 
+/**
+ * Adds a listener to a state.
+ * @function
+ * @param {String} state - the name of the state to listen to.
+ * @param {Function} cb - the function to call if the state was switched on.
+ **/
 StateEmitter.prototype.once = function(state, cb) {
   if (!state || typeof state !== 'string') {
     throw new Error('state is required and has to be a string');
@@ -25,7 +31,13 @@ StateEmitter.prototype.once = function(state, cb) {
   this._stateCallbacks[state].push(cb);
 };
 
-StateEmitter.prototype.emit = function(state) {
+/**
+ * Switches a state on.
+ * @function
+ * @param {String} state - the name of the state to switchon.
+ * @param {...*} args - the arguments to pass to the state listeners.
+ **/
+StateEmitter.prototype.state = function(state) {
   if (!state || typeof state !== 'string') {
     throw new Error('state is required and has to be a string');
   }
