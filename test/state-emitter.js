@@ -34,4 +34,22 @@ describe('StateEmitter', function() {
 
     expect(handler.calledWithExactly(23, 43)).to.be.true;
   });
+
+  describe('get state', function() {
+    it('has state', function() {
+      var emitter = new StateEmitter();
+      emitter.state('foo', 32);
+
+      var stateArgs = emitter.getState('foo');
+      expect(stateArgs).to.be.an('Array');
+      expect(stateArgs.length).to.eq(1);
+      expect(stateArgs[0]).to.eq(32);
+    });
+
+    it('doesn`t have state', function() {
+      var emitter = new StateEmitter();
+
+      expect(emitter.getState('foo')).to.be.undefined;
+    });
+  });
 });
