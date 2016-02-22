@@ -35,4 +35,4 @@ stateEmitter.once('ready', function(msg) {
 
 ## License
 
-MIT
+MIT © [Zoltan Kochan](https://www.kochan.io)
